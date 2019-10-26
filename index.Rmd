@@ -1,7 +1,17 @@
 ---
-title: "Holy cow!"
+title: "This is Sibei Liu's personal website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
-### I have a webpage!
+# Basic information
+Birth: 1996.02.23
 
-And I can put all kinds of stuff on it!
+Gender: Female
+
+Self_Intro:
+
+I am so lucky to have the opportunity to study biostatistics at Columbia University and to embrace a whole new world. Hopefully, during those two years, I can harvest a beautiful memory, a lot of friends and achieve my initial goal.
+
