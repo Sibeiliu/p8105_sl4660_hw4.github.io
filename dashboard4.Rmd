@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Dashboard from Sibei"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -55,7 +55,8 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-
+sub2 %>% 
+  plot_ly(x = ~order_dow, y =~mean_eachday_week , color = ~product_name, type = "scatter",mode="line")
 ```
 
 ### Chart C
