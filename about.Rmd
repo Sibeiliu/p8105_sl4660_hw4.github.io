@@ -1,9 +1,25 @@
 ---
-title: "About"
+title: " This is Sibei Liu's Acedemic Introduction"
 ---
 
-### About this site
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+# Education Background
+09/2019-
+Columbia University, School of Public Health
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+Major: Biostatistics
+
+09/2014-06/2019 
+Jilin University, School of Public Health
+
+Major: Information Management & Information System (Medical Information Management)  
+
+Degree: Bachelor of Management & Bachelor of Preventive Medicine
+
+Average: 87.28/100             
+
+Major Ranking: 1/28 
+
+IELTS: 7.5                    
+
+GRE:329+3               
