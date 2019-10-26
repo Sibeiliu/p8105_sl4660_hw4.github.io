@@ -80,6 +80,6 @@ sub2 %>%
 
 ```{r}
 sub4 %>% 
-  plot_ly(x = ~product_name, y =~n , color = ~product_name, type = "scatter",mode="markers")
+  plot_ly(x = ~product_name, y =~n , color = ~product_name, type = "scatter")
 ```
 
