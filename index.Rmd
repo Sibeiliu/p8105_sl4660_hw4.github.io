@@ -15,3 +15,27 @@ Self_Intro:
 
 I am so lucky to have the opportunity to study biostatistics at Columbia University and to embrace a whole new world. Hopefully, during those two years, I can harvest a beautiful memory, a lot of friends and achieve my initial goal.
 
+# Education Information
+ 
+ Please see [here](about.html) for detailed education experience
+
+
+# Life in China and America
+
+**China**:
+
+Here is my dog:
+
+
+![](image/mypuppy4.jpg)
+
+Here is in my undergraduate graduation ceremony:
+
+
+![](image/graduation2.jpg)
+
+**America**:
+
+A photo of the landmark in Columbia University 
+
+![](image/maincampus3.jpg)
