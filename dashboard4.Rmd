@@ -37,6 +37,23 @@ sub2=instacart %>%
   summarise(mean_eachday_week=mean(order_hour_of_day)) 
 ```
 
+```{r}
+sub3=instacart %>% 
+  sample_n(500) %>% 
+  group_by(product_name,aisle) %>% 
+  summarize(n=n())
+```
+
+```{r}
+sub4=instacart %>% 
+  filter(aisle=="packaged cheese") %>% 
+  group_by(product_name) %>% 
+  summarise(n=n()) %>% 
+  head(25) %>% 
+  mutate(product_name=fct_reorder(product_name,n)) 
+  
+```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
@@ -62,6 +79,7 @@ sub2 %>%
 ### Chart C
 
 ```{r}
-
+sub4 %>% 
+  plot_ly(x = ~product_name, y =~n , color = ~product_name, type = "scatter",mode="markers")
 ```
 
