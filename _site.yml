@@ -6,7 +6,7 @@ navbar:
     - text: "About"
       href: about.html
     - text: "Dashboard"
-      href: dashboardhw4.html
+      href: dashboard4.html
     - icon: fa-envelope fa-lg
       href: mailto:<sl4660@cumc.columbia.edu.com>
     - icon: fa-camera-retro

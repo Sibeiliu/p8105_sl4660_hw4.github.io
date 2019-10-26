@@ -1,0 +1,64 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+
+```
+
+```{r}
+data("instacart")
+  sub1=instacart %>% 
+    sample_n(500) %>% 
+  group_by(aisle) %>% 
+  summarise(n = n()) %>% 
+    mutate(aisle=fct_reorder(aisle,n))
+  
+```
+
+```{r}
+sub2=instacart %>% 
+  select(product_name,order_dow,order_hour_of_day) %>% 
+  filter(product_name %in% c("Pink Lady Apples","Coffee Ice Cream")) %>% 
+  mutate(
+    order_dow=recode(order_dow, `0`="Sun",`1`="Mon",`2`="Tue",`3`="Wed",`4`="Thur",`5`="Fri",`6`="Sat"),
+    order_dow=forcats::fct_relevel(order_dow,c("Mon","Tue","Wed","Thur","Fri","Sat","Sun"))
+  )  %>% 
+  group_by(product_name,order_dow) %>% 
+  summarise(mean_eachday_week=mean(order_hour_of_day)) 
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
