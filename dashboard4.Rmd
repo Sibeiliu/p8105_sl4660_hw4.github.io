@@ -44,7 +44,9 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
+sub1 %>% 
+  plot_ly(x = ~aisle, y =~n , color = ~aisle, type = "bar")
+  
 ```
 
 Column {data-width=350}
